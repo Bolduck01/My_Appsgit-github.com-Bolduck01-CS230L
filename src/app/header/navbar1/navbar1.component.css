@@ -1,0 +1,73 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
+  background-size: cover;
+}
+
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  background-color: rgb(181, 53, 246);
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    font-family: Gilroy;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.05); 
+}
+h2{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+div{text-align: center;
+}
+
+
+.box{
+   
+    font-size: 22px;
+	margin: 0px 0px;
+    background: none;
+    padding: 200px; 
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
+	background-size: cover;
+   
+}
+
+.box2 {
+	
+    margin: 0px 0px;
+    background: #030328;
+    padding: 190px;
+    padding-top: 30px;
+    font-size: 20px;
+    
+}
