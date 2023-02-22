@@ -16,249 +16,47 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-/* navBar styling */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
-    background-size: cover;
-  }
-  
-  
-  li {
-    float: left;
-    border-right:1px solid #bbb;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    background-color: rgb(181, 53, 246);
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.5s ease 0s;
-      font-family: Gilroy;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: white;
-    color: black;
-  }
-  
-  .active {
-    background-color: rgba(0, 0, 0, 0.05); 
-  }
-  h2{
-      text-align: center;
-  }
-  p{
-      text-align: center;
-  }
-  div{text-align: center;
-  }
-  
-  ul2 {
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(89, 0, 179);
-}
 
-lib {
-  float: left;
-}
-
-li b {
-  display: block;
-    background-color: rgb(181, 53, 246);
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.5s ease 0s;
-      font-family: Gilroy;
-}
-
-li b:hover:not(.active) {
-  background-color: white;
-    color: black;
-}
-  
-  .box{
-     
-      font-size: 22px;
-      margin: 0px 0px;
-      background: none;
-      padding: 200px; 
-      padding-top: 80px;
-      padding-bottom: 60px;
-      background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
-      background-size: cover;
-     
-  }
-  
-  .box2 {
-      
-      margin: 0px 0px;
-      background: #030328;
-      padding: 190px;
-      padding-top: 30px;
-      font-size: 20px;
-      
-  }
-  /* end of navBar1 */
- 
-  /* Advertising card */
-  .box3 {
- font-size:15px;
-      margin: 0px 0px;
-      padding: 150px; 
-      padding-top: 80px;
-      padding-bottom: 150px;
-      background-image: url(https://consequence.net/wp-content/uploads/2020/05/HBO-Max.jpg?quality=80);
-      background-size: cover;
-      }
-      
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: left;
-  font-family: Gilroy;
-}
-
-.price {
-  color: white;
-  font-size: 22px;
-  text-align:left;
-  padding-right: 500px;
-  
-}
-
-.box3 button {
-  outline: 0;
-  padding: 15px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.5s ease 0s;
-     
-}
-
-.box3 button:hover {
-  opacity: 0.7;
-}
-/* end of ad card */
 </style>
 </head>
 
-<body style="background-color: #030328; color: white; 
-font-family: Gilroy,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
-	<!-- navBar 1-->
-<!-- edit css (color / backgroun stuff in body -->
-<ul>
-  <li><a class="active" href="#home"><strong>HBOMAX</strong></a></li>
-  <li style="float:right"><a href="#SignUp"><strong>SIGN UP NOW</strong></a></li>
-  <li style="float:right"><a class="active" href="#SignIn"><strong>SIGN IN</strong></a></li>
-</ul>
-<!--navbar 2-->
-<ul2>
-    <li><a class="active" href="#home"><strong>Home</strong></a></li>
-    <li style="float:right"><a href="#SignUp"><strong>About</strong></a></li>
-    <li style="float:right"><a class="active" href="#SignIn"><strong>Contact</strong></a></li>
-  
-  </ul2>
+<body>
 
-   <!--<strong makes text bold-->
-        <!--<em> makes text italicised-->
-        <div class="box">
-            <h3>Do I Already Have Access to HBO Max?</h3>
-            <p>If you currently have HBO, you already have access to HBO Max. 
-                Let's get you up and streaming! Please note: HBO Max subscription plans vary by subscription provider.
-            </p>
-        </div>
-        
-    <div class="box2">
-    	<h2> If you have HBO without a TV package </h2>
-        <p>If you subscribe to HBO through <strong>Amazon Appstore, Apple, Google Play, Roku Channel Store, 
-            Samsung TV, WarnerMedia, Consolidated Communications, Liberty, North State, Optimum, Service Electric Cablevision, 
-            Verizon Fios</strong>, or <strong>Ziply Fiber</strong>, then you have access to HBO Max Ad-Free right now, at no extra cost!
-        </p>
-        <p>Download the HBO Max app and sign in with your existing HBO email and password, choose <strong>Access all of HBO Max,</strong> and start streaming instantly.
-
-        </p>
-    </div> 
-    <!-- carousels-->
-    <div class="carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="https://www.series-80.net/wp-content/uploads/2021/05/1619864325_Le-createur-Entourage-pense-que-HBO-Max-cache-une.jpg" 
-              style="width:100%;" size="cover;">
-              
-            </div>
-      
-             
-            <div class="item">
-              <img src="https://mbt.mv/wp-content/uploads/2022/08/house_of_the_dragon-1536x864.jpeg" 
-              style="width:100%; "size="cover;">
-            </div>
-          
-            <div class="item">
-              <img src="https://i.imgur.com/puzX37U.jpeg"
-               style="width:100%;" size="cover;">
-            </div>
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <!--end of carousels-->
-      <!-- Product Card -->
-    <div class="box3">
-        <box3><h1 class="price">Welcome to HBO Max Advertising</h1></box3>
-        <p class="price">Part of the world of Warner Bros. Discovery, and home to the most immersive experience for consumers and the most effective advertising for brands.</p>
-         <p class="price">Experience it for yourself at $9.99/month</p>
-         <p style="float:left" class="button"><button><strong>SIGN UP NOW</strong></button></p>
-      </div>
-    
-<app-root></app-root>
 <script src="  https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!--
+Data binding -> using methods to group stuff together 
+essentially making classes to trace methods in the html file 
+
+- helps so you're not restructuring everything when you make new things
+like product cards 
+
+For now -> one way data binding (giving info to the site)
+
+using ANGULAR 
+
+Go to typescript file -> explain what each variable / component is 
+eg ->
+
+export class CardComponent implements ...
+ {
+  "@Input() price: number
+      @Input() description: string"
+
+}
+      constructor() 
+      {
+        this.img = "..."
+        this.imgDescription = "...."
+      }
+
+Only modify things for one of the component 
+
+Lab4 
+
+
+/secondlayout
+
+-->

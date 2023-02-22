@@ -8,3 +8,9 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+//create new page
+//create new home-layout component tab
+//for lab: 5 layout components -> home layout and 4 others 
+//use buttons to redirct to new layouts 
+//two new layout components to have some components in

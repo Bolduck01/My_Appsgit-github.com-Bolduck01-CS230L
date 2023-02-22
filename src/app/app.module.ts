@@ -8,6 +8,8 @@ import { Navbar1Component } from './header/navbar1/navbar1.component';
 import { Navbar2Component } from './footer/navbar2/navbar2.component';
 import { Carousel1Component } from './carousel1/carousel1.component';
 import { ProductCard1Component } from './product-card1/product-card1.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductCard2Component } from './product-card2/product-card2.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProductCard1Component } from './product-card1/product-card1.component';
     Navbar1Component,
     Navbar2Component,
     Carousel1Component,
-    ProductCard1Component
+    ProductCard1Component,
+    ProductCardComponent,
+    ProductCard2Component
   ],
   imports: [
     BrowserModule,
