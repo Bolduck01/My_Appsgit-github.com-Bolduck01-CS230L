@@ -1,88 +1,84 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name = "viewbar" content="width=device-width, initial-scale=1"> 
-    <style>
-      ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
-  background-size: cover;
+<nav class="navbar1">
+  <meta name = "navbar1" content="width=device-width, initial-scale=1"> 
+  <style>
+    ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
+background-size: cover;
 }
 
 li {
-  float: left;
-  border-right:1px solid #bbb;
+float: left;
+border-right:1px solid #bbb;
 }
 
 li:last-child {
-  border-right: none;
+border-right: none;
 }
 
 li a {
-  display: block;
-  background-color: rgb(181, 53, 246);
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.5s ease 0s;
-    font-family: Gilroy;
+display: block;
+background-color: rgb(181, 53, 246);
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  font-family: Gilroy;
 }
 
 li a:hover:not(.active) {
-  background-color: white;
-  color: black;
+background-color: white;
+color: black;
 }
 
 .active {
-  background-color: rgba(0, 0, 0, 0.05); 
+background-color: rgba(0, 0, 0, 0.05); 
 }
 h2{
-	text-align: center;
+text-align: center;
 }
 p{
-	text-align: center;
+text-align: center;
 }
 div{text-align: center;
 }
 
 
 .box{
-   
-    font-size: 22px;
-	margin: 0px 0px;
-    background: none;
-    padding: 200px; 
-    padding-top: 80px;
-    padding-bottom: 60px;
-    background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
-	background-size: cover;
-   
+ 
+  font-size: 22px;
+margin: 0px 0px;
+  background: none;
+  padding: 200px; 
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-image: url(https://hbomax-images.warnermediacdn.com/2020-12/201215_hbomax_waystoget.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=1920);
+background-size: cover;
+ 
 }
-    </style>
-  </head>
+  </style>
 <head>
-	 <meta charset="utf-8">
-    <title>HBO Max</title>
-<meta name = "viewbar" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+  <title>HBO Max</title>
+<meta name = "nav" content="width=device-width, initial-scale=1">
 <!-- padding is box size-->
 <!-- margin is -->
 
 </head>
 <body style="background-color: #030328; color: white; font-family: Gilroy,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
-	
+
 <!-- edit css (color / backgroun stuff in body -->
 <ul>
-  <li><a class="active" href="#home"><strong>HBOMAX</strong></a></li>
-  <li style="float:right"><a href="#SignUp"><strong>SIGN UP NOW</strong></a></li>
-  <li style="float:right"><a class="active" href="#SignIn"><strong>SIGN IN</strong></a></li>
+<li><a routerLink="HomeLayout" class="active" href="#hbohome"><strong>HBOMAX</strong></a></li>
+<li style="float:right"><a routerLink="Sign-up" href="#SignUp"><strong>SIGN UP NOW</strong></a></li>
+<li style="float:right"><a routerLink="Sign-In" class="active" href="#SignIn"><strong>SIGN IN</strong></a></li>
 </ul>
 
 </body>
-
-</html>
+</nav>

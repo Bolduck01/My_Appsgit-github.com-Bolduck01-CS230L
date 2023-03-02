@@ -10,6 +10,14 @@ import { Carousel1Component } from './carousel1/carousel1.component';
 import { ProductCard1Component } from './product-card1/product-card1.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductCard2Component } from './product-card2/product-card2.component';
+import { HomeLayoutComponent } from './Layouts/home-layout/home-layout.component';
+import { SecondLayoutComponent } from './Layouts/second-layout/second-layout.component';
+import { ThirdLayoutComponent } from './Layouts/third-layout/third-layout.component';
+import { FourthLayoutComponent} from './Layouts/fourth-layout/fourth-layout.component';
+import { FifthLayoutComponent } from './Layouts/fifth-layout/fifth-layout.component';
+import { HomebodyComponent } from './homebody/homebody.component';
+import { IntroComponent } from './intro/intro.component';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +25,23 @@ import { ProductCard2Component } from './product-card2/product-card2.component';
     Navbar1Component,
     Navbar2Component,
     Carousel1Component,
-    ProductCard1Component,
     ProductCardComponent,
-    ProductCard2Component
+    ProductCard1Component,
+    ProductCard2Component,
+    HomeLayoutComponent,
+    SecondLayoutComponent,
+    ThirdLayoutComponent,
+    FourthLayoutComponent,
+    FifthLayoutComponent,
+    HomebodyComponent,
+    IntroComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
