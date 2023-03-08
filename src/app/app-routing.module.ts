@@ -1,32 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeLayoutComponent } from './Layouts/home-layout/home-layout.component';
-import { SecondLayoutComponent } from './Layouts/second-layout/second-layout.component';
-import { ThirdLayoutComponent } from './Layouts/third-layout/third-layout.component';
-import { FourthLayoutComponent} from './Layouts/fourth-layout/fourth-layout.component';
-import { FifthLayoutComponent } from './Layouts/fifth-layout/fifth-layout.component';
-const routes: Routes = [
+import { AboutComponent } from './Pages/about/about.component';
+import { ContactComponent } from './Pages/contact/contact.component';
+import { HbomaxComponent } from './Pages/hbomax/hbomax.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { SignInComponent } from './Pages/sign-in/sign-in.component';
+import { SignUpComponent } from './Pages/sign-up/sign-up.component';
 
-{
-  path: 'HomeLayout',
-  component: HomeLayoutComponent 
-},
-{
-  path: 'Sign-In',
-  component: SecondLayoutComponent
-},
-{
-  path: 'Sign-up',
-  component: ThirdLayoutComponent
-},
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'Hbomax',
+    component: HbomaxComponent
+  },
+  {
+    path: 'Sign-In',
+    component: SignInComponent
+  },
+  {
+    path: 'Sign-Up',
+    component: SignUpComponent
+  },
 {
   path: 'About',
-  component: FourthLayoutComponent
+  component: AboutComponent 
 },
 {
   path: 'Contact',
-  component: FifthLayoutComponent
-}
+  component: ContactComponent
+},
 
 ];
 

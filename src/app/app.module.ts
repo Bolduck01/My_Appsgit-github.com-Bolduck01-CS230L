@@ -3,44 +3,43 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Navbar1Component } from './header/navbar1/navbar1.component';
-import { Navbar2Component } from './footer/navbar2/navbar2.component';
-import { Carousel1Component } from './carousel1/carousel1.component';
+import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { CarouselComponent } from './Components/carousel/carousel.component';
 import { ProductCard1Component } from './product-card1/product-card1.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductCard2Component } from './product-card2/product-card2.component';
-import { HomeLayoutComponent } from './Layouts/home-layout/home-layout.component';
-import { SecondLayoutComponent } from './Layouts/second-layout/second-layout.component';
-import { ThirdLayoutComponent } from './Layouts/third-layout/third-layout.component';
-import { FourthLayoutComponent} from './Layouts/fourth-layout/fourth-layout.component';
-import { FifthLayoutComponent } from './Layouts/fifth-layout/fifth-layout.component';
-import { HomebodyComponent } from './homebody/homebody.component';
-import { IntroComponent } from './intro/intro.component';
+import { HomebodyComponent } from './Components/homebody/homebody.component';
+import { HbomaxComponent } from './Pages/hbomax/hbomax.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { SignInComponent } from './Pages/sign-in/sign-in.component';
+import { SignUpComponent } from './Pages/sign-up/sign-up.component';
+import { AboutComponent } from './Pages/about/about.component';
+import { ContactComponent } from './Pages/contact/contact.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Navbar1Component,
-    Navbar2Component,
-    Carousel1Component,
+    NavBarComponent,
+    FooterComponent,
+    CarouselComponent,
     ProductCardComponent,
     ProductCard1Component,
     ProductCard2Component,
-    HomeLayoutComponent,
-    SecondLayoutComponent,
-    ThirdLayoutComponent,
-    FourthLayoutComponent,
-    FifthLayoutComponent,
     HomebodyComponent,
-    IntroComponent
+    HbomaxComponent,
+    HomeComponent,
+    SignInComponent,
+    SignUpComponent,
+    AboutComponent,
+    ContactComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
 
   ],
   providers: [],

@@ -1,54 +1,50 @@
-<div class="card-outline">
-    <style>
-        ul {
-        font-size:15px;
-          margin: 0px 0px;
-          padding: 150px; 
-          padding-top: 80px;
-          padding-bottom: 150px;
-          background-image: url({img});
-          background-size: cover;
-      }
-          
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 300px;
-      margin: auto;
-      text-align: left;
-      font-family: Gilroy;
-    }
-    
-    .price {
-      color: white;
-      font-size: 22px;
-      text-align:left;
-      padding-right: 500px;
-      
-    }
-    
-    .box button {
-      outline: 0;
-      padding: 15px;
-      color: black;
-      background-color: white;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-      font-size: 18px;
-      border-radius: 50px;
-          cursor: pointer;
-          transition: all 0.5s ease 0s;
-         
-    }
-    
-    .box button:hover {
-      opacity: 0.7;
-    }
-      </style>
-<div class = "card" style="width: 300px; height: 500px;">
-    <img src={{img}} class = "box3" alt={imgDescription}>
-        <h1 class="price">{{description}}</h1>
-        <p class="price">{{description}}</p>
-    <p style="float:center" class="button"><button><strong>{{price}}</strong></button></p>
+<!DOCTYPE html>
+<head>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: white;
+  opacity: 0.8;
+   background-image: url(https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png);;
+}
+
+.c button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+ background-image: url(https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png);;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  opacity: 0.8;
+  background-color: none;
+}
+
+.pc button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body style="background-image: url(https://www.hbomax.com/static/wef/img/bg-gradient.jpg);">
+
+<div class="card" >
+
+  <h1>{{title}}</h1>
+  <h3>{{description}}</h3>
+  
+  <button style="padding: 15px;">
+  <p class="price">{{price}}/mo</p>
+  
+  </button>
+  <button style="padding: 15px;">
+  <p class="price">{{price1}}/yr</p>
+  </button>
 </div>
-</div>
+
+</body>
+

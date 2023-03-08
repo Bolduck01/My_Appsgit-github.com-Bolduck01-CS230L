@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { mock_list } from './product-card/mock_lists';
-import { productModel } from './product-card/product.model';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +6,6 @@ import { productModel } from './product-card/product.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'kitchen-sink';
-  products: productModel[] = [];
+  title = 'My-Website';
 
-  constructor() {
-    for (var product of mock_list) {
-      console.log(product);
-      this.products.push(product);
-    }
-  }
 }
