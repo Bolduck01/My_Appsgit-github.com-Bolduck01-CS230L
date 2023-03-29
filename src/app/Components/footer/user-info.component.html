@@ -1,0 +1,16 @@
+<p *ngIf= "myInfo == undefined"> User info component is working</p>
+<div *ngIf= "myInfo != undefined">
+    <div class = "container-fluid">
+        <div class = "d-flex flex-row justify-content-between">
+            <div class="flex-column">
+                User: {{myInfo.FirstName}} {{myInfo.LastName}}
+            </div>
+            <div class ="flex-column">
+               Mix ID: {{myInfo.mix_id}} 
+            </div>
+            <div class="flex-column">
+                <a href={{myInfo.GitHub}}>GitHub: {{myInfo.GitHub}}</a>
+            </div>
+        </div>
+    </div>
+</div>

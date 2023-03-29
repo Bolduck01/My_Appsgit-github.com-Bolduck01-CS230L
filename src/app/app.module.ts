@@ -16,8 +16,8 @@ import { SignInComponent } from './Pages/sign-in/sign-in.component';
 import { SignUpComponent } from './Pages/sign-up/sign-up.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { ContactComponent } from './Pages/contact/contact.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent} from './Components/footer/user-info.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +35,13 @@ import { ContactComponent } from './Pages/contact/contact.component';
     SignUpComponent,
     AboutComponent,
     ContactComponent,
+    UserInfoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
 
   ],
   providers: [],
