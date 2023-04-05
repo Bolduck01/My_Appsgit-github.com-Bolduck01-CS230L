@@ -1,122 +1,142 @@
-<div class="Sign-In">
-    <app-nav-bar></app-nav-bar>
-    <app-footer></app-footer>
+<app-nav-bar></app-nav-bar>
+  <app-footer></app-footer>
   
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        /* Style the header */
-        header {
-          background-color: #666;
-          padding: 30px;
-          text-align: center;
-          font-size: 35px;
-          color: white;
-        }
-        
-        /* Create two columns/boxes that floats next to each other */
-         nav {
-                  float: left;
-                  width: 30%;
-                  background-image: url("https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png");
-                  padding: 20px;
-                }
-                
-                /* Style the list inside the menu */
-                nav ul {
-                  list-style-type: none;
-                  padding: 0;
-                }
-        
-        /* Style the footer */
-        footer {
-          background-color: rgb(31,3,39);
-          padding: 10px;
-          text-align: center;
-          color: purple;
-        }
-        
-        hr.solid {
-          border-top: 3px solid #bbb;
-        }
-        
-        .divider {
-          display: flex;
-          align-items: center;
-          text-align: center;
-        }
-        
-        /* To show the lines on right 
-        and left sides of the text */
-        .divider::after,
-        .divider::before {
-          content: "";
-          border: 0.5px solid rgb(246,238,248);
-          flex: 1;
-        }
-        
-        /* Space on left and right sides of text */
-        .divider:not(:empty)::before {
-          margin-right: 0.25em;
-        }
-        
-        .divider:not(:empty)::after {
-          margin-left: 0.25em;
-        }
-        
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-          nav, article {
-            width: 100%;
-            height: auto;
+  <!DOCTYPE html>
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  
+  
+  article {
+     margin-left: auto;
+      margin-right: auto;
+    padding: 20px;
+    width: 70%;
+    background-image: url("https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png");
+    height: 450px; /* only for demonstration, should be removed */
+    
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+  
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+   .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
           }
-        }
- </style>
-        
- <body style = "background-color: rgb(31,3,39);">
-        <h2 style="text-align: center; color: white;">Sign In </h2>
-        
-        <div>
-             <nav style = "color: white; margin-top: 25px; margin-bottom: 75px;" >
-                     <h1>Do you have an HBO Max Account?</h1>
-            
-                 <div>
-                 <input
-                    type="text"
-                      id="uname"
-                      name="name"
-                       placeholder="Email Address" />
-                  </div>
-            
-             <div>
-                 <input
-                     type = "text"
-                     id="pword"
-                      name="pname"
-                      placeholder="Password" />
-                </div>
-              
-              <div>
-                   <p><button>Sign In</button> &emsp; <button> Forgot Password? </button></p>
-                 </div>
           
-              <div class = "divider" >
-                  <p> OR </p>
-                 </div>
+          /* To show the lines on right 
+          and left sides of the text */
+          .divider::after,
+          .divider::before {
+            content: "";
+            border: 0.5px solid rgb(246,238,248);
+            flex: 1;
+          }
+          
+          /* Space on left and right sides of text */
+          .divider:not(:empty)::before {
+            margin-right: 0.25em;
+          }
+          
+          .divider:not(:empty)::after {
+            margin-left: 0.25em;
+          }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+
+  <body style = "background-color: rgb(31,3,39); " >
+  
+  <h2 style = "text-align: center; color: white;">Sign In</h2>
+  
+  
+  
+  <section>
+    
+    <article style = "color: white;">
+      <h1>Do you have a Max Accout?</h1>
+      
+      <div>
+                   <input
+                      type="text"
+                        id="uname"
+                        name="name"
+                         placeholder="Email Address" />
+                    </div>
+
+                    <p> </p>
+              
+               <div>
+                   <input
+                       type = "text"
+                       id="pword"
+                        name="pname"
+                        placeholder="Password" />
+                  </div>
+
+                  <p> </p>
+                
+                <div>
+                     <p><button>Sign In</button> &emsp; <button> Forgot Password? </button></p>
+                   </div>
             
-                 <p>Do you get HBO Max from another company such as a TV, mobile, or internet provider?</p>
-            
-                 <button>Sign In With a Provider</button>
-             </nav>
-        </div>
-    </body>  	 
-</div>
+                <div class = "divider" >
+                    <p> OR </p>
+                   </div>
+              
+                   <p>Do you get HBO Max from another company such as a TV, mobile, or internet provider?</p>
+              
+                   <button>Sign In With a Provider</button>
+      
+    </article>
+  </section>
+  
+  <footer>
+    <p style = "color:  rgb(123,30,202);">Need help signing in?</p>
+  </footer>
+  
+  </body>
+  
+  
+  
+
+
     
     
     
