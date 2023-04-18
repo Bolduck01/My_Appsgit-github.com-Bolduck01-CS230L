@@ -1,1 +1,29 @@
-<p>add-product works!</p>
+<router-outlet></router-outlet>
+<app-home></app-home>
+
+<div class = "container">
+    <div class ="row">
+        <div class="col">
+            <form #postForm="ngForm" (ngSubmit)="addProduct(postForm.value)">
+                <div class="input-">
+                    <span class ="input-text">Image Path</span>
+                    <input type ="text" class="form-contril" ngModel name="img">
+                </div>
+
+                <div class="input-">
+                    <span class ="input-text">title</span>
+                    <input type ="text" class="form-contril">
+                </div>
+
+                <div class="input-">
+                    <span class ="input-text">text</span>
+                    <input type ="text" class="form-contril">
+                </div>
+
+                <button class="btn" type="submit">
+                    Add image
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

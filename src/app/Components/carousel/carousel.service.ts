@@ -20,4 +20,8 @@ export class CarouselService {
     getCarousel(index: number){
         return this.http.get<CarouselModel>(this.baseUrl + 'Carousel' + '/' + index + 'json' );
     }
+
+    addCarousel(product: CarouselModel){
+        this.http.get<CarouselModel>("product");
+      }
 }   

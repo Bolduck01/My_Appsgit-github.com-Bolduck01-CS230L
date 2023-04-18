@@ -19,6 +19,9 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './Components/user-info/user-info.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { AddProductComponent } from './Components/add-product/add-product.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, 
+    FormsModule,
 
   ],
   providers: [],
