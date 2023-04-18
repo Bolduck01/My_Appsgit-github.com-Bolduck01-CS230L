@@ -8,14 +8,8 @@ import { SignInComponent } from './Pages/sign-in/sign-in.component';
 import { SignUpComponent } from './Pages/sign-up/sign-up.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'Hbomax',
-    component: HbomaxComponent
-  },
+  { path: '',component: HomeComponent},
+  {path: 'Hbomax',component: HbomaxComponent},
   {
     path: 'Sign-In',
     component: SignInComponent

@@ -1,12 +1,9 @@
 export class CarouselModel {
 
-    title: string;
-    description: string;
     img: string;
+    
 
-    constructor(title: string, description: string, img: string){
-        this.title = title;
-        this.description = description;
+    constructor( img: string){
         this.img = img;
     }
     

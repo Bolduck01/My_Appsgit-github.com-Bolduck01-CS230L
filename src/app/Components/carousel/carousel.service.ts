@@ -13,7 +13,11 @@ export class CarouselService {
     constructor(private http:HttpClient){
 
     }
-    getCarousel(){
+    getCarousels(){
         return this.http.get<CarouselModel []>(this.baseUrl + this.carouselEndPoint);
+    }
+
+    getCarousel(index: number){
+        return this.http.get<CarouselModel>(this.baseUrl + 'Carousel' + '/' + index + 'json' );
     }
 }   

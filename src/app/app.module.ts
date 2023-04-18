@@ -18,6 +18,7 @@ import { AboutComponent } from './Pages/about/about.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './Components/user-info/user-info.component';
+import { AddProductComponent } from './Components/add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UserInfoComponent } from './Components/user-info/user-info.component';
     SignUpComponent,
     AboutComponent,
     ContactComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddProductComponent
 
   ],
   imports: [

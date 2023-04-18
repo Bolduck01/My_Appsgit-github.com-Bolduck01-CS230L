@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void{
-    this.carouselservice.getCarousel().subscribe((data: CarouselModel[])=> {
+    this.carouselservice.getCarousels().subscribe((data: CarouselModel[])=> {
       for (var x of data){
         console.log(x)
         this.products.push(x)
