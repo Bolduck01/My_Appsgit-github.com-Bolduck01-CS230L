@@ -1,140 +1,141 @@
 
-  <app-footer></app-footer>
+<app-footer></app-footer>
   
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-  
-  
-  
-  article {
-     margin-left: auto;
-      margin-right: auto;
-    padding: 20px;
-    width: 70%;
-    background-image: url("https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png");
-    height: 450px; /* only for demonstration, should be removed */
-    
-  }
-  
-  /* Clear floats after the columns */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  footer {
-  
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  
-   .divider {
-            display: flex;
-            align-items: center;
-            text-align: center;
-          }
-          
-          /* To show the lines on right 
-          and left sides of the text */
-          .divider::after,
-          .divider::before {
-            content: "";
-            border: 0.5px solid rgb(246,238,248);
-            flex: 1;
-          }
-          
-          /* Space on left and right sides of text */
-          .divider:not(:empty)::before {
-            margin-right: 0.25em;
-          }
-          
-          .divider:not(:empty)::after {
-            margin-left: 0.25em;
-          }
-  
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
-  }
-  </style>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <body style = "background-color: rgb(31,3,39); " >
-  
-  <h2 style = "text-align: center; color: white;">Sign In</h2>
-  
-  
-  
-  <section>
-    
-    <article style = "color: white;">
-      <h1>Do you have a Max Accout?</h1>
-      
-      <div>
-                   <input
-                      type="text"
-                        id="uname"
-                        name="name"
-                         placeholder="Email Address" />
-                    </div>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-                    <p> </p>
-              
-               <div>
-                   <input
-                       type = "text"
-                       id="pword"
-                        name="pname"
-                        placeholder="Password" />
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+
+article {
+   margin-left: auto;
+    margin-right: auto;
+  padding: 20px;
+  width: 70%;
+  background-image: url("https://cdn.optimizely.com/img/15506560068/7826c4ee796b4867be8acb98ff286793.png");
+  height: 450px; /* only for demonstration, should be removed */
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+ .divider {
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+        
+        /* To show the lines on right 
+        and left sides of the text */
+        .divider::after,
+        .divider::before {
+          content: "";
+          border: 0.5px solid rgb(246,238,248);
+          flex: 1;
+        }
+        
+        /* Space on left and right sides of text */
+        .divider:not(:empty)::before {
+          margin-right: 0.25em;
+        }
+        
+        .divider:not(:empty)::after {
+          margin-left: 0.25em;
+        }
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<body style = "background-color: rgb(24, 2, 30); padding-top: 80px; padding-bottom: 20px;" >
+
+<h2 style = "text-align: center; color: white; padding-bottom: 30 px;">Sign In</h2>
+
+
+
+<section>
+  
+  <article style = "color: white; padding-top: 30px;">
+    <h1>Do you have a Max Accout?</h1>
+    
+    <div>
+                 <input style ="background-color: rgba(0, 0, 0, 0.2);"
+                    type="text"
+                      id="uname"
+                      name="name"
+                       placeholder="Email Address" />
                   </div>
 
                   <p> </p>
-                
-                <div>
-                     <p><button>Sign In</button> &emsp; <button> Forgot Password? </button></p>
-                   </div>
             
-                <div class = "divider" >
-                    <p> OR </p>
-                   </div>
+             <div>
+                 <input
+                 style ="background-color: rgba(0, 0, 0, 0.2);"
+                     type = "text"
+                     id="pword"
+                      name="pname"
+                      placeholder="Password" />
+                </div>
+
+                <p> </p>
               
-                   <p>Do you get HBO Max from another company such as a TV, mobile, or internet provider?</p>
-              
-                   <button>Sign In With a Provider</button>
-      
-    </article>
-  </section>
-  
-  <footer>
-    <p style = "color:  rgb(123,30,202);">Need help signing in?</p>
-  </footer>
-  
-  </body>
-  
-  
-  
+              <div>
+                   <p><button style = "padding: 10px 15px; background-color: rgba(0, 0, 0, 0); color: white; outline: none;">Sign In</button> &emsp; <button style ="background-color: rgb(0,0,0,0); color: rgb(145, 129, 248);"> Forgot Password? </button></p>
+                 </div>
+          
+              <div class = "divider" >
+                  <p> OR </p>
+                 </div>
+            
+                 <p>Do you get HBO Max from another company such as a TV, mobile, or internet provider?</p>
+            
+                 <button style="padding: 10px 15px; background-color: rgba(0, 0, 0, 0); color: white;">Sign In With a Provider</button>
+    
+  </article>
+</section>
+
+<footer>
+  <p style = "color:  rgb(123,30,202);">Need help signing in?</p>
+</footer>
+
+</body>
 
 
-    
-    
-    
+
+
+
+  
+  
+  

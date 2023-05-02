@@ -1,10 +1,6 @@
-export class CarouselModel {
+export interface CarouselInfo {
 
     img: string;
-    
-
-    constructor( img: string){
-        this.img = img;
-    }
+    alt: string;
     
 }

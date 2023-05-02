@@ -1,6 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { CarouselModel } from "./carousel.model";
+import { CarouselInfo } from "./carousel.model";
+
+
 
 @Injectable(
     {providedIn: 'root'}
@@ -14,14 +16,14 @@ export class CarouselService {
 
     }
     getCarousels(){
-        return this.http.get<CarouselModel []>(this.baseUrl + this.carouselEndPoint);
+        return this.http.get<CarouselInfo []>(this.baseUrl + this.carouselEndPoint);
     }
 
     getCarousel(index: number){
-        return this.http.get<CarouselModel>(this.baseUrl + 'Carousel' + '/' + index + 'json' );
+        return this.http.get<CarouselInfo>(this.baseUrl + 'Carousel' + '/' + index + 'json' );
     }
 
-    addCarousel(product: CarouselModel){
-        this.http.get<CarouselModel>("product");
+    addCarousel(product: CarouselInfo){
+        this.http.get<CarouselInfo>("product");
       }
 }   

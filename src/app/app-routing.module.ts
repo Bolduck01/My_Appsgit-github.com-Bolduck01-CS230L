@@ -7,6 +7,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { SignInComponent } from './Pages/sign-in/sign-in.component';
 import { SignUpComponent } from './Pages/sign-up/sign-up.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   { path: '',component: HomeComponent},
@@ -16,8 +17,10 @@ const routes: Routes = [
   {path: 'Sign-Up',component: SignUpComponent},
 {path: 'About',component: AboutComponent },
 {path: 'Contact',component: ContactComponent},
+{path: 'auth', component: AuthComponent},
 
 ];
+
 
 @NgModule({
   declarations: [],

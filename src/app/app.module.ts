@@ -20,7 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './Components/user-info/user-info.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
-
+import { ShowsCarouselComponent } from './Components/shows-carousel/shows-carousel.component';
+import { initializeApp } from 'firebase/app';
+import { FirebaseApp } from 'firebase/app';
+import { environment } from 'src/environments/environment';
+import { AuthComponent } from './auth/auth.component';
+// import { provideDatabase,getDatabase } from '@angular/fire/database'
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+// import { AngularFireModule } from '@angular/fire/compat'; 
 
 
 @NgModule({
@@ -40,7 +47,9 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     UserInfoComponent,
-    AddProductComponent
+    AddProductComponent,
+    ShowsCarouselComponent,
+    AuthComponent
 
   ],
   imports: [
@@ -48,7 +57,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule, 
     FormsModule,
-
+    // provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase()),
+   // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

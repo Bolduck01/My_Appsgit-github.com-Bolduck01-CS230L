@@ -10,7 +10,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyATLPyjo9V7rfnDUKdNTSBoVGIs6DnoE9s",
   authDomain: "hbo-app-86135.firebaseapp.com",
   databaseURL: "https://hbo-app-86135-default-rtdb.firebaseio.com",
