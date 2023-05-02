@@ -9,6 +9,9 @@ import { SignUpComponent } from './Pages/sign-up/sign-up.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { AuthComponent } from './auth/auth.component';
 
+
+
+
 const routes: Routes = [
   { path: '',component: HomeComponent},
   {path: 'Hbomax',component: HbomaxComponent},
